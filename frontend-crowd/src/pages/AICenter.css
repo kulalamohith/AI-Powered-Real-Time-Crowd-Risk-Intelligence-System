@@ -1,0 +1,108 @@
+.ai-center-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255,255,255,0.97);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  padding: 32px 24px 40px 24px;
+}
+
+.ai-center-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #764ba2;
+  margin-bottom: 8px;
+}
+
+.ai-center-desc {
+  text-align: center;
+  color: #555;
+  margin-bottom: 32px;
+  font-size: 1.1rem;
+}
+
+.ai-center-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.ai-center-option {
+  background: linear-gradient(135deg, #f8fafc 60%, #e9e4f0 100%);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(102,126,234,0.08);
+  padding: 32px 28px 24px 28px;
+  min-width: 200px;
+  max-width: 220px;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  border: 2px solid transparent;
+}
+
+.ai-center-option.selected, .ai-center-option:hover {
+  box-shadow: 0 4px 24px rgba(102,126,234,0.18);
+  border: 2px solid #764ba2;
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+  transform: translateY(-4px) scale(1.04);
+}
+
+.ai-center-icon {
+  margin-bottom: 16px;
+}
+
+.ai-center-label {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.ai-center-description {
+  font-size: 0.98rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.ai-center-content {
+  margin-top: 32px;
+  min-height: 80px;
+  background: #f6f7fb;
+  border-radius: 12px;
+  padding: 24px 18px;
+  box-shadow: 0 2px 8px rgba(102,126,234,0.06);
+}
+
+.ai-action-btn {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.08rem;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(102,126,234,0.12);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  margin-left: 8px;
+}
+.ai-action-btn:disabled {
+  background: #e0e0e0;
+  color: #aaa;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.ai-action-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 16px rgba(102,126,234,0.18);
+}
+
+/* Improve input and form layout */
+.ai-center-content form select,
+.ai-center-content form input[type="text"] {
+  font-size: 1.05rem;
+  margin-right: 0;
+} 
